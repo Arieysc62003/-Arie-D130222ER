@@ -1,6 +1,6 @@
 {
   "short_name": "Business Card App",
-  "name": "Business Card application for businesses",
+  "name": "Business card application for businesses",
   "icons": [
     {
       "src": "./assets/business-card.png",
