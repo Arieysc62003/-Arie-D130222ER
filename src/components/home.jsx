@@ -8,7 +8,7 @@ class Home extends Component {
       url: "https://picsum.photos/1200/700",
       alt: "Random image",
     },
-    array: ["one", "two", "three", "four", "five"],
+    array: [],
   };
 
   colorHeadLine = {
@@ -19,10 +19,15 @@ class Home extends Component {
   render() {
     const { url, alt } = this.state.image;
     const array = [...this.state.array];
+    if (!array.length) return <p>No item....</p>;
     return (
       <div className="container">
         <PageHeader />
         <Card />
+        {array.map((item, index, array) => {
+          console.log(array);
+          return <div key={index}>{item}</div>;
+        })}
       </div>
     );
   }
