@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PageHeader from "./pageHeader";
+import Card from "./card";
 
 class Home extends Component {
   state = {
@@ -7,11 +8,23 @@ class Home extends Component {
       url: "https://picsum.photos/1200/700",
       alt: "Random image",
     },
+    array: ["one", "two", "three", "four", "five"],
+  };
+
+  colorHeadLine = {
+    color: "red",
+    fontSize: "2rem",
   };
 
   render() {
     const { url, alt } = this.state.image;
-    return <img className="card-img-top" src={url} alt={alt} />
+    const array = [...this.state.array];
+    return (
+      <div className="container">
+        <PageHeader />
+        <Card />
+      </div>
+    );
   }
 }
 
