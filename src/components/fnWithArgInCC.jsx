@@ -12,7 +12,7 @@ class FnWithArgInCc extends Component {
         className="btn btn-danger"
       >
         {" "}
-        +{" "}
+        Func w/arg CC
       </button>
     );
   }

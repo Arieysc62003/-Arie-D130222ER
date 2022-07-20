@@ -33,8 +33,7 @@ class Home extends Component {
           return <div key={index}>{item}</div>;
         })}
         <button onClick={this.cbClick} className="btn btn-primary">
-          {" "}
-          +{" "}
+          Func In CC
         </button>
       </div>
     );
